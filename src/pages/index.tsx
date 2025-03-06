@@ -1,3 +1,3 @@
-import WeatherAlertsPage from "@/components/pages/WeatherAlertsPage";
+import WeatherAlertsPage from "@/components/WeatherAlertsPage";
 
 export default WeatherAlertsPage;

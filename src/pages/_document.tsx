@@ -1,15 +1,11 @@
-import {
-  DocumentHeadTags,
-  DocumentHeadTagsProps,
-  documentGetInitialProps,
-} from "@mui/material-nextjs/v15-pagesRouter";
-import { Html, Head, Main, NextScript, DocumentContext, DocumentProps } from "next/document";
+import { ColorSchemeScript, mantineHtmlProps } from '@mantine/core';
+import { Html, Head, Main, NextScript } from "next/document";
 
-export default function Document(props: DocumentProps & DocumentHeadTagsProps) {
+export default function Document() {
   return (
-    <Html lang="en">
+    <Html lang="en" {...mantineHtmlProps}>
       <Head>
-        <DocumentHeadTags {...props} />
+        <ColorSchemeScript defaultColorScheme="auto" />
       </Head>
       <body>
         <Main />
@@ -18,7 +14,3 @@ export default function Document(props: DocumentProps & DocumentHeadTagsProps) {
     </Html>
   );
 }
-
-Document.getInitialProps = async (ctx: DocumentContext) => {
-  return await documentGetInitialProps(ctx);
-};

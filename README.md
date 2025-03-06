@@ -1,6 +1,6 @@
 # National Weather Service UI
 
-This project is a user interface for the National Weather Service built using Next.js and TypeScript with Material-UI (MUI).
+This project is a user interface for the National Weather Service built using Next.js and TypeScript with Mantine.
 
 ## Getting Started
 
@@ -53,7 +53,7 @@ npm run generate-types
 ## Technologies Used
 - **Next.js**: A React framework for server-side rendering and static site generation.
 - **TypeScript**: A typed superset of JavaScript that compiles to plain JavaScript.
-- **Material-UI (MUI)**: A popular React UI framework for building responsive, accessible, and customizable design systems.
+- **Mantine**: A fully featured React components library.
 - **TanStack React Query**: A powerful data-fetching library for React that simplifies data synchronization and caching.
 
 ## License
